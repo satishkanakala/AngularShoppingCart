@@ -1,0 +1,34 @@
+<!--Cart-->
+<h4 *ngIf="cartItems.length === 0" class="cartheader"  >CartItem is Empty</h4>
+<div *ngIf="cartItems.length !== 0" class="cart-overlay">
+  <h2 class="cartHeading">Cart Items</h2>
+  <div class="cart" style="display: flex;">
+    <div class="cart-content" style="width: 65%;">
+      <!--cart item-->
+      <div class="cart-item" *ngFor="let item of cartItems">
+        <img  src="{{item.img_url}}" class="product-img" alt="item">
+        <div>
+          <h4>{{item.name}}</h4>
+          <h4 style="padding-top: 15px;">${{item.price - (item.price*item.discount/100)}}
+            <del class="delPrice">{{item.price}}</del>
+            <span class="discPrice">{{item.discount}}%</span>
+          </h4>
+        </div>
+        <div class="counter">
+          <i class="fas fa-plus-circle" (click)="handleIncrement(item)"></i>
+          <p class="item-amount">{{item.quantity}}</p>
+          <i class="fas fa-minus-circle" (click)="handleDecriment(item)"></i>
+        </div>
+        <span class="remove-item" class="makebold" (click)="handelRemoveItem(item)" >Remove</span>
+      </div>
+      <!--End cart item-->
+    </div>
+    <div class="cart-footer">
+      <h3>Price Details</h3>
+      <h3>Total Payabile : $ <span class="cart-total">{{cartTotalValue}}</span></h3>
+      <!-- <h3>Price : $ <span class="cart-total">{{cartTotalValue}}</span></h3> -->
+      <button class="clear-cart banner-btn" routerLink="" routerLinkActive="active">Continue shopping</button>
+    </div>
+  </div>
+</div>
+<!--End of Cart-->

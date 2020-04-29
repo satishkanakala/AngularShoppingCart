@@ -1,0 +1,12 @@
+<nav class="navbar">
+  <div class="navbar-center">
+      <a routerLink="" routerLinkActive="active">
+        <span class="nav-icon-logo"><i class="fas fa-star"></i> </span></a>
+    <div class="cart-btn">
+      <a routerLink="/cart" routerLinkActive="active"> <span class="nav-icon">
+        <i class="fas fa-cart-plus"></i>
+      </span></a>
+      <div class="cart-items">{{cartItemsLength ? cartItemsLength : 0}}</div>
+    </div>
+  </div>
+</nav>

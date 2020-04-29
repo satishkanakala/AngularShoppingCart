@@ -1,0 +1,27 @@
+<body>
+  <!--List Items-->
+  <section class="products">
+    <div class="sortBy">Sort By
+      <span class="price-filter" id="ltoh" (click)="sortLtoH()">Price--Low High</span>
+      <span class="price-filter" id="htol" (click)="sortHtoL()">Price--High Low</span>
+    </div>
+    <div class="products-center">
+      <article class="product" *ngFor="let item of productListItems">
+        <div class="img-container">
+          <img src="{{item.img_url}}" class="product-img" alt="item">
+        </div>
+        <h3>{{item.name}}</h3>
+        <h4>${{item.price - (item.price*item.discount/100)}}
+          <del class="delPrice">{{item.price}}</del>
+          <span class="discPrice">{{item.discount}}%</span>
+        </h4>
+        <!-- <h4>${{item.price}}</h4> -->
+        <button class="item-btn" (click)="handelAddToCart(item)">
+          <i class="fas fa-shopping-cart">Add to Cart</i>
+        </button>
+      </article>
+    </div>
+  </section>
+  <!--End List Items-->
+
+</body>
