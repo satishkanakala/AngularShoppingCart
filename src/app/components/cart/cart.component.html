@@ -1,11 +1,14 @@
 <!--Cart-->
+<div class="serchItem">
+  <input type="text" class="searchInput"  [(ngModel)]="serchParam" placeholder="Serch Product"/>
+</div>
 <h4 *ngIf="cartItems.length === 0" class="cartheader"  >CartItem is Empty</h4>
 <div *ngIf="cartItems.length !== 0" class="cart-overlay">
   <h2 class="cartHeading">Cart Items</h2>
   <div class="cart" style="display: flex;">
-    <div class="cart-content" style="width: 65%;">
+    <div class="cart-content">
       <!--cart item-->
-      <div class="cart-item" *ngFor="let item of cartItems">
+      <div class="cart-item" *ngFor="let item of cartItems | filter:serchParam">
         <img  src="{{item.img_url}}" class="product-img" alt="item">
         <div>
           <h4>{{item.name}}</h4>

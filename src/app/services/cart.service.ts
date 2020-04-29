@@ -96,7 +96,7 @@ export class CartService {
       // tslint:disable-next-line: no-unused-expression
       {
         "id": "9090",
-        "name": "Item1",
+        "name": "Laptop",
         "price": 200,
         "discount": 10,
         "category": "fiction",
@@ -104,7 +104,7 @@ export class CartService {
       },
       {
         "id": "9091",
-        "name": "Item2",
+        "name": "Desktop",
         "price": 250,
         "discount": 15,
         "category": "literature",
@@ -112,7 +112,7 @@ export class CartService {
       },
       {
         "id": "9092",
-        "name": "Item3",
+        "name": "Ram",
         "price": 320,
         "discount": 5,
         "category": "literature",
@@ -120,7 +120,7 @@ export class CartService {
       },
       {
         "id": "9093",
-        "name": "Item4",
+        "name": "Laptop",
         "price": 290,
         "discount": 0,
         "category": "thriller",
@@ -128,7 +128,7 @@ export class CartService {
       },
       {
         "id": "9094",
-        "name": "Item1",
+        "name": "Desktop",
         "price": 500,
         "discount": 25,
         "category": "thriller",
@@ -136,7 +136,7 @@ export class CartService {
       },
       {
         "id": "9095",
-        "name": "Item2",
+        "name": "Ram",
         "price": 150,
         "discount": 5,
         "category": "literature",
@@ -144,7 +144,7 @@ export class CartService {
       },
       {
         "id": "9096",
-        "name": "Item3",
+        "name": "Mouse",
         "price": 700,
         "discount": 22,
         "category": "literature",
@@ -152,7 +152,71 @@ export class CartService {
       },
       {
         "id": "9097",
-        "name": "Item4",
+        "name": "Ram",
+        "price": 350,
+        "discount": 18,
+        "category": "fiction",
+        "img_url": "http://lorempixel.com/500/600/technics/"
+      },
+      {
+        "id": "9098",
+        "name": "Laptop",
+        "price": 200,
+        "discount": 10,
+        "category": "fiction",
+        "img_url": "http://lorempixel.com/500/600/technics/"
+      },
+      {
+        "id": "9099",
+        "name": "Mouse",
+        "price": 250,
+        "discount": 15,
+        "category": "literature",
+        "img_url": "http://lorempixel.com/500/600/technics/"
+      },
+      {
+        "id": "9080",
+        "name": "Ram",
+        "price": 320,
+        "discount": 5,
+        "category": "literature",
+        "img_url": "http://lorempixel.com/500/600/technics/"
+      },
+      {
+        "id": "9081",
+        "name": "Laptop",
+        "price": 290,
+        "discount": 0,
+        "category": "thriller",
+        "img_url": "http://lorempixel.com/500/600/technics/"
+      },
+      {
+        "id": "9082",
+        "name": "Desktop",
+        "price": 500,
+        "discount": 25,
+        "category": "thriller",
+        "img_url": "http://lorempixel.com/500/600/technics/"
+      },
+      {
+        "id": "9083",
+        "name": "Ram",
+        "price": 150,
+        "discount": 5,
+        "category": "literature",
+        "img_url": "http://lorempixel.com/500/600/technics/"
+      },
+      {
+        "id": "9084",
+        "name": "Mouse",
+        "price": 700,
+        "discount": 22,
+        "category": "literature",
+        "img_url": "http://lorempixel.com/500/600/technics/"
+      },
+      {
+        "id": "9085",
+        "name": "Desktop",
         "price": 350,
         "discount": 18,
         "category": "fiction",

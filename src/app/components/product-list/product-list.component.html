@@ -4,9 +4,12 @@
     <div class="sortBy">Sort By
       <span class="price-filter" id="ltoh" (click)="sortLtoH()">Price--Low High</span>
       <span class="price-filter" id="htol" (click)="sortHtoL()">Price--High Low</span>
+      <div class="serchItem">
+        <input type="text" class="searchInput"  [(ngModel)]="serchParam" placeholder="Serch Product"/>
+      </div>
     </div>
     <div class="products-center">
-      <article class="product" *ngFor="let item of productListItems">
+      <article class="product" *ngFor="let item of productListItems | filter:serchParam">
         <div class="img-container">
           <img src="{{item.img_url}}" class="product-img" alt="item">
         </div>

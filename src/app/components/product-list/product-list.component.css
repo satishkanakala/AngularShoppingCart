@@ -1,0 +1,28 @@
+.serchItem{
+  position: absolute;
+  top: 3%;
+  left: 77%;
+  z-index: 3;
+}
+.searchInput{
+  border: 3px solid #333333;
+  height: 33px;
+  width: 160px;
+  border-radius: 30px;
+  padding: 0px 10px;
+}
+@media screen and (max-width: 468px) {
+  .serchItem{
+    position: fixed;
+    top: 2.5%;
+    left: 50%;
+    z-index: 3;
+  }
+  .searchInput{
+    border: 2px solid #333333;
+    height: 30px;
+    width: 125px;
+    border-radius: 25px;
+    padding: 0px 5px;
+  }
+}

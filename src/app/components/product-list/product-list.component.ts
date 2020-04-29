@@ -10,6 +10,7 @@ export class ProductListComponent implements OnInit {
 
   productListItems;
   cartItemsLength;
+  serchParam;
 
   constructor(public cartService: CartService) {
     this.productListItems = this.cartService.getProductList();

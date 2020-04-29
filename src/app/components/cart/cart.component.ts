@@ -9,6 +9,7 @@ import { CartService } from 'src/app/services/cart.service';
 export class CartComponent implements OnInit {
   cartItems = [];
   cartTotalValue;
+  serchParam;
 
   constructor(public cartService: CartService) {
     this.cartItems = this.cartService.getItemsFromCart();
