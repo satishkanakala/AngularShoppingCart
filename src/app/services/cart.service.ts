@@ -38,10 +38,16 @@ export class CartService {
   getTotalAmount() {
     if (this.cartItems) {
       this.totalAmount = 0;
+      let totalDiscount = 0;
       this.cartItems.forEach((item) => {
-        this.totalAmount += (item.quantity * (item.price - (item.price * item.discount / 100)));
+        // this.totalAmount += (item.quantity * (item.price - (item.price * item.discount / 100)));
+        this.totalAmount += (item.quantity * item.price );
+        totalDiscount  += (item.quantity * (item.price * item.discount / 100));
       });
-      return this.totalAmount;
+      return {
+        totalAmount: this.totalAmount,
+        Discount: totalDiscount
+      };
     }
   }
 

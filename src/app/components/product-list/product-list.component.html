@@ -1,12 +1,26 @@
-<body>
+<body >
+  <div class="list-container">
   <!--List Items-->
+  <!-- <div class="slider-container"> <ng5-slider [(value)]="minValue" [(highValue)]="maxValue" (click)="handleRangeSlider()" [options]="options"></ng5-slider></div> -->
+  <div class="slider-container">
+    <h5 style="margin-bottom: 2em;">Filters</h5>
+    <npn-slider [min]="150" [max]="750" (onChange)="handleRangeSlider($event)" [step]="50" [showStepIndicator]="true"></npn-slider>
+    <h5 class="rangeprice-filter">Price</h5>
+    </div>
   <section class="products">
     <div class="sortBy">Sort By
       <span class="price-filter" id="ltoh" (click)="sortLtoH()">Price--Low High</span>
       <span class="price-filter" id="htol" (click)="sortHtoL()">Price--High Low</span>
-      <div class="serchItem">
-        <input type="text" class="searchInput"  [(ngModel)]="serchParam" placeholder="Serch Product"/>
-      </div>
+      <span class="price-filter" id="htol" (click)="sortDicount()">Discount</span>
+    </div>
+    <div class="mobile-filter">
+      <button class="item-btn"><i class="fas fa-sort">Sort</i>
+      </button>
+      <button class="item-btn"><i class="fas fa-filter">Filter</i>
+      </button>
+    </div>
+    <div class="serchItem">
+      <input type="text" class="searchInput"  [(ngModel)]="serchParam" placeholder="Serch Product"/>
     </div>
     <div class="products-center">
       <article class="product" *ngFor="let item of productListItems | filter:serchParam">
@@ -26,5 +40,6 @@
     </div>
   </section>
   <!--End List Items-->
+</div>
 
 </body>

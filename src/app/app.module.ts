@@ -8,6 +8,8 @@ import { CartComponent } from './components/cart/cart.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FilterPipe } from './pipes/filter.pipe';
+import { Ng5SliderModule } from 'ng5-slider';
+import { NpnSliderModule } from 'npn-slider';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { FilterPipe } from './pipes/filter.pipe';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    Ng5SliderModule,
+    NpnSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
