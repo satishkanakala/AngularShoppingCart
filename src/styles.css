@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@import '~bootstrap/dist/css/bootstrap.min.css'
 
 :root {
   --primaryColor: #f09d51;
@@ -174,6 +175,20 @@ body {
   margin: auto;
   display: block;
 }
+.mobile-filter-btn{
+  background:#fff;
+  color:#444;
+  letter-spacing: var(--mainSpacing);
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif !important;
+  padding: .3rem;
+  border: 1ps solid #333;
+  border-radius: 5px;
+  box-shadow: none;
+  margin: 0px 5px;
+}
 .product h3 {
   text-transform: capitalize;
   font-size: 1.1rem;
@@ -221,8 +236,12 @@ body {
   .slider-container{
     display: none !important;
   }
+.cartHeading {
+  display: none !important;
+}
   .products {
     width: 100%;
+    padding: 0rem !important;
     border-left: none;
   }
   .cart-content{
@@ -235,10 +254,10 @@ body {
   .cart-footer {
     width: 76% !important;
     position: fixed;
-    bottom: 5%;
+    bottom: 6%;
     margin-top: 0px !important;
     left: 10%;
-    height: 117px !important;
+    height: 150px !important;
     padding: 2px !important;
 }
   .cart-item {
@@ -282,6 +301,7 @@ body {
 .mobile-filter {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: .5rem auto;
 }
 .price-filter {
   margin: 2% 1%;

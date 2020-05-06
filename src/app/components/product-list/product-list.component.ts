@@ -12,6 +12,7 @@ export class ProductListComponent implements OnInit {
   cartItemsLength;
   serchParam;
   sliderValue;
+  showModel = false;
   // minValue: number = 0;
   // maxValue: number = 500;
   // options: Options = {
@@ -53,6 +54,10 @@ export class ProductListComponent implements OnInit {
     this.productListItems.sort( (a, b) => {
       return a.price - b.price;
     });
+  }
+
+  showModelPop() {
+    this.showModel = true;
   }
 
 
