@@ -42,7 +42,7 @@
 </div>
 
 <!-- The Modal -->
-<div class="modal" id="myModal" [ngClass]="{'show':showModel}">
+<div class="modal" id="myModal" *ngIf="showModel">
   <div class="modal-dialog">
     <div class="modal-content">
 
